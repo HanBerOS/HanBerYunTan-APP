@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
           cache-dependency-path: yuntan-app/package-lock.json
       - name: npm ci
@@ -34,4 +34,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: yuntan-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
