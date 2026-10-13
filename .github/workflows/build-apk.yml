@@ -16,7 +16,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-            - name: Accept Android SDK licenses
+      - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses
       - name: Setup Node
         uses: actions/setup-node@v4
